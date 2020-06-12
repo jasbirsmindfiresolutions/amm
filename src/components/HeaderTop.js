@@ -28,6 +28,12 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: '#ffffff',
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2)
+  },
+  signUpBox: {
+    float: 'right',
+    [theme.breakpoints.down('sm')]: {
+      float: 'none',
+    },
   }
 }));
 
@@ -42,7 +48,7 @@ const Layout = () => {
                 info@attractivemyamar.com
               </Typography>
             </Box>
-            <Box component="span" mr={5} style={{ float: 'right' }}>
+            <Box component="span" mr={5} className={classes.signUpBox}>
               <Typography component="span" className={classes.loginSignupText}>
                 Login
               </Typography>

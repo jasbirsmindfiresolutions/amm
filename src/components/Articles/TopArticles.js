@@ -24,7 +24,12 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   filter: {
     marginRight: 0,
-    marginLeft: 'auto'
+    marginLeft: 'auto',
+    display: 'flex',
+    alignSelf: 'center'
+  },
+  filterActive: {
+    color: '#10d0d3'
   },
   excerpt: {
     textAlign: 'left',
@@ -40,6 +45,11 @@ const useStyles = makeStyles((theme: Theme) => ({
   postFootShares: {
     marginRight: 0,
     marginLeft: 'auto'
+  },
+  divider: {
+    marginRight: theme.spacing(1),
+    marginLeft: theme.spacing(1),
+    width: 2
   }
 }));
 
@@ -57,8 +67,12 @@ const Explore = () => {
               </Typography>
             </Box>
             <Box className={classes.filter}>
-              <Typography variant="subtitle1">
-                Recent | Popular
+              <Typography variant="body1" display="inline" className={classes.filterActive}>
+                Recent
+              </Typography>
+              <Divider orientation="vertical" flexItem className={classes.divider} />
+              <Typography variant="body1" display="inline">
+                Popular
               </Typography>
             </Box>
         </Box>

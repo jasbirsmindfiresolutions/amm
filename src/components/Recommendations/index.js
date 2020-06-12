@@ -20,11 +20,16 @@ const useStyles = makeStyles((theme: Theme) => ({
     textAlign: 'left',
     padding: theme.spacing(1),
     fontWeight: 700
+  },
+  heading: {
+    marginBottom: theme.spacing(2),
+    fontWeight: 700
   }
 }));
 
 // config for slider dots
 const customUL = styled.ul`
+  text-align: center;
   & li button {
     font-size: 40px;
     padding: 0;
@@ -45,12 +50,12 @@ const Recommendations = () => {
   	
   	return (
     	<Box>
-        <Typography variant="h5">
+        <Typography variant="h5" className={classes.heading}>
           Recommended for you
         </Typography>
        <TopDestinationsSlider
         cardsToShow={1}
-        autoSlide={false}
+        autoSlide={true}
         showArrows={false}
         showDots={true}
         infinite={false}

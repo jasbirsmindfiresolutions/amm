@@ -19,7 +19,7 @@ import { makeStyles, Theme } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme: Theme) => ({
   discoverTraverller: {
     width: '100%',
-    height: theme.spacing(85),
+    paddingBottom: theme.spacing(2),
     background: '#00ed7e',
     borderRadius: 15
   },
@@ -42,6 +42,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     background: '#fff',
     width: '100%',
     fontWeight: 700
+  },
+  heading: {
+    marginBottom: theme.spacing(2)
   }
 }));
 
@@ -52,7 +55,7 @@ const LeftBar = () => {
   	
   	return (
     	<Box>
-        <Typography variant="h6">
+        <Typography variant="h6" className={classes.heading}>
           Explore People and connect!
         </Typography>
         <Paper elevation={0} className={classes.discoverTraverller}>

@@ -35,7 +35,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   destinationImage: {
-    borderRadius: theme.spacing(1)
+    borderTopRightRadius: theme.spacing(1),
+    borderTopLeftRadius: theme.spacing(1)
   },
   desinationTitle: {
     textAlign: 'left',
@@ -44,6 +45,10 @@ const useStyles = makeStyles((theme: Theme) => ({
   destination: {
     borderRadius: theme.spacing(1),
     marginRight: theme.spacing(1)
+  },
+  heading: {
+    marginBottom: theme.spacing(2),
+    fontWeight: 700
   }
 }));
 
@@ -55,7 +60,7 @@ const TopDestinations = () => {
   	
   	return (
     	<Box>
-        <Typography variant="h5">
+        <Typography variant="h5" className={classes.heading}>
           Top Destinations
         </Typography>
        <TopDestinationsSlider

@@ -15,11 +15,8 @@ import { makeStyles, Theme } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme: Theme) => ({
   containerRoot: {
-    [theme.breakpoints.down('lg')]: {
-      maxWidth: '1440px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      maxWidth: '1280px',
+    [theme.breakpoints.down('md')]: {
+      maxWidth: '100%'
     },
   }
 }));

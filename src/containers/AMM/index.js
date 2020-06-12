@@ -20,9 +20,6 @@ import TravellersNearby from '../../components/Posts/Post/TravellersNearby';
 const useStyles = makeStyles((theme: Theme) => ({
   containerRoot: {
   	marginTop: theme.spacing(5)
-  },
-  heading: {
-    textAlign: 'center'
   }
 }));
 
@@ -35,14 +32,14 @@ const AMM = () => {
             <Grid item xs={12} lg={3} md={3}>
 	            <LeftBar />
             </Grid>
-            <Grid item xs={12} lg={6} md={6} className={classes.heading}>
+            <Grid item xs={12} lg={6} md={6}>
 	            <TopDestinations />
 	            <Recommendations />
 	            <Post />
 	            <TravellersNearby />
 	            <Post />
             </Grid>
-            <Grid item xs={12} lg={3} md={3} className={classes.heading}>
+            <Grid item xs={12} lg={3} md={3}>
             	<RightBar />
             </Grid>
         </Grid> 

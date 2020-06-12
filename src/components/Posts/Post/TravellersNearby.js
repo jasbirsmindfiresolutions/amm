@@ -19,7 +19,7 @@ import UserProfileIcon from '../../../assets/header-icons/icon-user-profile-pic.
 
 const useStyles = makeStyles((theme: Theme) => ({
   TravellersNearbyRoot: {
-  	height: theme.spacing(25),
+  	paddingBottom: theme.spacing(2),
   	marginBottom: theme.spacing(3),
     background: '#e8a21b',
   },
@@ -40,9 +40,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: 'flex'
   },
   user: {
-    margin: theme.spacing(2.5),
-    width: 80,
-    height: 80
+    margin: '3.4%',
+    width: '13%',
+    height: '13%'
   }
 }));
 

@@ -47,6 +47,9 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   exploreImage: {
     borderRadius: 15
+  },
+  heading: {
+    marginBottom: theme.spacing(2)
   }
 }));
 
@@ -56,7 +59,7 @@ const RightBar = () => {
   	
   	return (
     	<Box component="div" p={1}>
-        <Typography variant="h6">
+        <Typography variant="h6" className={classes.heading}>
           Explore the best of myanmar!
         </Typography>
 
